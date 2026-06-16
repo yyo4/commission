@@ -3,193 +3,183 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>委託規範 - yyo4</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍑</text></svg>">
-<meta property="og:title" content="委託規範 - yyo4">
+<title>commission - yyo4</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍥</text></svg>">
+<meta property="og:title" content="commission - yyo4">
 <meta property="og:description" content="收到私噗即視為已閱讀並同意以下事項，請務必詳閱，謝謝！">
-<meta name="theme-color" content="#a64d79">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light only">
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#1a1a1a;
-    --sub:#6b6b6b;
-    --line:#e3e3e3;
-    --pink:#a64d79;
-    --pink-bg:#fbeef4;
-    --pink-line:#e8a9c8;
+    --ink:#4a4a4a;
+    --soft:#9a9a9a;
+    --faint:#c8c8c8;
+    --blue:#a7c7e7;
+    --bluedeep:#7fa8d4;
+    --pink:#e7a7c7;
+    --line:#ececec;
   }
   *{box-sizing:border-box;}
+  html{font-size:16px;background:#fff;color-scheme:light only;}
   body{
     background:#fff;
     color:var(--ink);
-    font-family:"Arial","Microsoft JhengHei","微軟正黑體",sans-serif;
-    font-size:11pt;
-    line-height:1.7;
-    max-width:600px;
+    font-family:"Helvetica Neue","Microsoft JhengHei","微軟正黑體",sans-serif;
+    font-size:10pt;
+    line-height:1.9;
+    letter-spacing:1.27px;
+    max-width:640px;
     margin:0 auto;
-    padding:44px 36px 60px;
+    padding:50px 32px 100px;
+    text-align:center;
   }
-  .title{font-size:21pt;font-weight:800;margin:0;letter-spacing:1px;}
-  .lede{color:var(--sub);font-size:10pt;margin:6px 0 2px;}
-  .lede strong{color:var(--ink);}
-
-  hr{border:none;border-top:1px solid var(--line);margin:26px 0;}
-
-  h2{
-    color:var(--pink);
-    font-size:13pt;
-    font-weight:800;
-    margin:0 0 10px;
-    display:flex;align-items:center;gap:8px;
+  .deco{
+    image-rendering:pixelated;
+    width:96px;height:auto;
+    margin:10px auto 70px;
+    display:block;
   }
-  h2 .num{
-    font-size:9pt;color:#fff;background:var(--pink);
-    border-radius:50%;width:20px;height:20px;
-    display:inline-flex;align-items:center;justify-content:center;
-    flex:0 0 auto;font-weight:700;
+  .sec-title{
+    font-family:"DotGothic16",monospace;
+    font-size:15pt;
+    color:var(--blue);
+    letter-spacing:1px;
+    text-align:left;
+    margin:70px 0 28px;
+    font-weight:400;
   }
-  ul{margin:6px 0;padding-left:20px;}
-  li{margin:6px 0;}
-  p{margin:5px 0;}
-
-  /* 超級注意：最大聲 */
+  .sec-title .dash{color:var(--bluedeep);margin-right:3px;}
+  .sec-title:first-of-type{margin-top:0;}
+  p{margin:14px 0;}
+  .block{text-align:left;margin:22px 0;}
+  .lead{color:var(--soft);font-size:9.5pt;text-align:left;line-height:2;}
+  strong{color:var(--bluedeep);font-weight:400;}
+  .em{color:var(--pink);}
   .super{
-    border:2.5px solid var(--pink);
-    border-radius:10px;
-    background:var(--pink-bg);
-    padding:18px 22px;
-    margin:26px 0;
+    text-align:left;
+    border-top:1px solid var(--pink);
+    border-bottom:1px solid var(--pink);
+    padding:24px 4px;
+    margin:54px 0;
+    line-height:2;
   }
-  .super h2{font-size:15pt;margin-bottom:8px;}
-  .super p{margin:8px 0;font-size:11.5pt;font-weight:600;}
-  .super .whisper{font-size:9.5pt;font-weight:400;color:var(--sub);}
-
-  /* 重點標籤行 */
-  .tag-row{margin:6px 0;}
-  .tag{font-weight:800;letter-spacing:1px;color:var(--pink);}
-
-  /* 附則：收斂成小字 */
-  details{
-    margin:8px 0 0;
-    border-left:2px solid var(--line);
-    padding-left:14px;
+  .super .h{
+    font-family:"DotGothic16",monospace;
+    color:var(--pink);
+    font-size:11pt;
+    letter-spacing:2px;
+    margin-bottom:12px;
   }
+  .super .whisper{color:var(--soft);font-size:9pt;}
+  .tags{text-align:left;line-height:2.1;}
+  .tag{font-family:"DotGothic16",monospace;color:var(--blue);letter-spacing:2px;margin-right:8px;}
+  .tag.ng{color:var(--pink);}
+  details{text-align:left;margin:14px 0;}
   details summary{
-    cursor:pointer;
-    color:var(--sub);
-    font-size:9.5pt;
-    list-style:none;
-    user-select:none;
+    cursor:pointer;color:var(--soft);font-size:9.5pt;
+    list-style:none;letter-spacing:1.5px;
   }
   details summary::-webkit-details-marker{display:none;}
-  details summary::before{content:"▸ ";color:var(--pink);}
-  details[open] summary::before{content:"▾ ";}
-  details .fine{
-    font-size:9.5pt;
-    color:var(--sub);
-    line-height:1.65;
-    margin-top:8px;
-  }
-  details .fine li{margin:5px 0;}
-
+  details summary::before{content:"+ ";color:var(--blue);font-family:"DotGothic16",monospace;}
+  details[open] summary::before{content:"- ";}
+  details .fine{color:var(--soft);font-size:9.5pt;line-height:1.95;margin:12px 0 0;padding-left:4px;}
+  details .fine p{margin:8px 0;}
   .flow{
-    background:#fafafa;border:1px solid var(--line);border-radius:8px;
-    padding:12px 16px;font-size:10pt;line-height:1.9;
+    text-align:left;color:var(--soft);font-size:9.5pt;
+    letter-spacing:1px;line-height:2.2;margin:18px 0;
+    white-space:nowrap;overflow-x:auto;
   }
-  .pay-bank{font-size:10pt;}
-  .pay-bank b{color:var(--pink);}
-  .sub{color:var(--sub);font-size:9.5pt;}
-  .arrow{color:#9a6fb0;font-size:9.5pt;}
-  .foot{margin-top:40px;text-align:center;color:var(--sub);font-size:9pt;}
+  .foot{
+    font-family:"DotGothic16",monospace;
+    color:var(--faint);font-size:9pt;letter-spacing:2px;
+    margin-top:90px;
+  }
+  .arrow{color:var(--pink);}
+  a.link{color:var(--blue);text-decoration:none;}
+  .nowrap{white-space:nowrap;overflow-x:auto;}
+  .fine ul{margin:8px 0;padding-left:4px;list-style:none;}
+  .fine ul li{margin:8px 0;padding-left:16px;position:relative;line-height:1.95;}
+  .fine ul li::before{content:"・";color:var(--blue);position:absolute;left:0;}
 </style>
 </head>
 <body>
 
-  <p class="title">委託規範</p>
-  <p class="lede">Plurk @yyo4</p>
-  <p class="lede">※ 細項內容（工期、價目表與喊單方式）請以每次加開時的<strong>最新公告</strong>為準。</p>
-  <p class="lede">收到私噗即視為<strong>已閱讀並同意</strong>以下事項，為保護雙方權益請務必詳閱，謝謝！</p>
+  <img class="deco" src="deco.gif" alt="">
 
-  <!-- ★ 最重要：超級注意置頂放大 -->
+  <p class="sec-title"><span class="dash">-</span>commission</p>
+  <p class="lead">Plurk @yyo4</p>
+  <p class="lead">※ 細項內容（工期、價目表與喊單方式）請以每次加開時的最新公告為準。</p>
+  <p class="lead">收到私噗即視為<strong>已閱讀並同意</strong>以下事項，為保護雙方權益請務必詳閱，謝謝！</p>
+
   <div class="super">
-    <h2>【超級注意？！】</h2>
-    <p>每位角色請只提供 1-2 張「清晰全身圖」<span class="whisper">（不要給我滿版頭像拼貼 🙏 我會不知道要看哪顆。）</span></p>
-    <p>謝絕多圖拼貼、大量文字備註、小房間或各種外連結。</p>
-    <p>不需人物介紹也不幫忙換裝<span class="whisper">（例：免服模板、A 圖的上衣 B 圖的髮型、通靈換裝）。</span></p>
+    <div class="h">超級注意 ？！</div>
+    每位角色請只提供 1-2 張「清晰全身圖」<span class="whisper">（不要給我滿版頭像拼貼，我會不知道要看哪顆）</span><br>
+    謝絕多圖拼貼、大量文字備註、小房間或各種外連結。<br>
+    不需人物介紹也不幫忙換裝<span class="whisper">（例：免服模板、A 圖的上衣 B 圖的髮型、通靈換裝）。</span>
   </div>
 
-  <hr>
-
-  <h2><span class="num">1</span>基本規範</h2>
-  <ul>
-    <li>非商業委託，成品僅供個人非商業用途，禁止任何形式營利。版權歸繪者所有，作品會加上水印公開發表，如需不公開另談加價。</li>
-    <li>不受理未成年委託人、替他人委託與第三方帳戶匯款。</li>
-    <li>完稿期限前請勿重複催件；期間會開轉蛋等其他項目，不影響已排單之進度。</li>
-    <li>不接受任何原因之棄單／延期付款，經提醒仍無回應者一律黑名單，且不再受理與此帳號／設定相關之委託。</li>
-  </ul>
+  <p class="sec-title"><span class="dash">-</span>basic</p>
+  <div class="block">
+    <p>非商業委託，成品僅供個人非商業用途，禁止任何形式營利。版權歸繪者所有，作品會加上水印公開發表，如需不公開另談加價。</p>
+    <p>不受理未成年委託人、替他人委託與第三方帳戶匯款。</p>
+    <p>完稿期限前請勿重複催件；期間會開轉蛋等其他項目，不影響已排單之進度。</p>
+    <p>不接受任何原因之棄單／延期付款，經提醒仍無回應者一律黑名單，且不再受理與此帳號／設定相關之委託。</p>
+  </div>
   <details>
     <summary>盜用相關條款</summary>
-    <div class="fine">
-      禁自作宣言、未經同意紅線、翻轉、調色等二次加工、學習參考及任何盜用之營利行為。
-    </div>
+    <div class="fine"><p>禁自作宣言、未經同意紅線、翻轉、調色等二次加工、學習參考及任何盜用之營利行為。</p></div>
   </details>
 
-  <hr>
-
-  <h2><span class="num">2</span>設定與需求</h2>
-  <p class="tag-row"><span class="tag">ＯＫ</span>　原創、夢向、二創（含 vtb、手遊）</p>
-  <p class="tag-row"><span class="tag">ＮＧ</span>　設定樓、外網站連結、組合肉、純文字、官方禁二創作品</p>
-  <p class="tag-row"><span class="tag">ＮＧ夢</span>　歌い手 / nqrse / Crazy Raccoon / 真人日韓偶像演員等</p>
-  <p class="sub">（不論同框、友情／愛情向，不確定可以詢問，若發現偷渡以上任一即永久黑單）</p>
+  <p class="sec-title"><span class="dash">-</span>setting</p>
+  <div class="tags">
+    <p><span class="tag">ＯＫ</span>原創、夢向、二創（含 vtb、手遊）</p>
+    <p><span class="tag ng">ＮＧ</span>設定樓、外網站連結、組合肉、純文字、官方禁二創作品</p>
+    <p><span class="tag ng">ＮＧ夢</span>歌い手 / nqrse / Crazy Raccoon / 真人日韓偶像演員等</p>
+  </div>
+  <p class="lead">（不論同框、友情／愛情向，不確定可以詢問，若發現偷渡以上任一即永久黑單）</p>
   <details>
     <summary>細部處理與加價</summary>
     <div class="fine">
-      <ul>
-        <li>複雜設定（獸耳、尾巴、翅膀）視情況加價 NT.50-100。</li>
-        <li>眼鏡、痣、黑眼圈、疤痕、雀斑等面部細節將配合畫面協調性而省略。</li>
-      </ul>
+      <p>複雜設定（獸耳、尾巴、翅膀）視情況加價 NT.50-100。</p>
+      <p>眼鏡、痣、黑眼圈、疤痕、雀斑等面部細節將配合畫面協調性而省略。</p>
     </div>
   </details>
 
-  <hr>
-
-  <h2><span class="num">3</span>付款方式</h2>
-  <p class="pay-bank"><b>【台灣地區】</b>中信銀行　<b>【其他地區】</b>噗幣 1:45（需等待開放時段）</p>
-  <ul>
-    <li><strong>付款期限：喊單後 24 小時內</strong>。資料、款項皆齊才開始進入排單順序。</li>
-    <li>期限內經 1 次提醒未回應，即視為棄單。</li>
-  </ul>
+  <p class="sec-title"><span class="dash">-</span>payment</p>
+  <div class="block">
+    <p class="lead">【台灣地區】中信銀行　／　【其他地區】噗幣 1:45（需等待開放時段）</p>
+    <p><strong>付款期限：喊單後 24 小時內</strong>。資料、款項皆齊才開始進入排單順序。</p>
+    <p>期限內經 1 次提醒未回應，即視為棄單。</p>
+  </div>
   <details>
     <summary>資料未齊的處理</summary>
     <div class="fine">
       <p>※ 若付款後才告知資料未完整，款項將退回且不保留位置。</p>
-      <p class="arrow">→「只提供初版人設圖，後續告知會改造型」視為資料未齊全。</p>
+      <p class="em">→「只提供初版人設圖，後續告知會改造型」視為資料未齊全。</p>
     </div>
   </details>
 
-  <hr>
-
-  <h2><span class="num">4</span>委託流程</h2>
+  <p class="sec-title"><span class="dash">-</span>flow</p>
   <div class="flow">
     私噗 ＞ 提供資料 ＞ 報價 ＞ 1 日內提供資料 &amp; 匯全款 ＞ 開始排單 ＞ 完稿 ＞ 一次修改 ＞ 結案
   </div>
-  <ul>
-    <li>私噗噗首只需註明「項目 x 數量」，例：Ax1, Bx1。</li>
-    <li>即使我與您曾有舊的交易噗，也請<strong>重新私噗一次</strong>。</li>
-    <li>需先確認角色設定後才會進行報價，<strong>收到您的 @ 與資料</strong>才會回覆並提供帳戶。</li>
-  </ul>
+  <div class="block">
+    <p>私噗噗首只需註明「項目 x 數量」，例：Ax1, Bx1。</p>
+    <p>即使我與您曾有舊的交易噗，也請<strong>重新私噗一次</strong>。</p>
+    <p>需先確認角色設定後才會進行報價，<strong>收到您的 @ 與資料</strong>才會回覆並提供帳戶。</p>
+  </div>
 
-  <hr>
-
-  <h2><span class="num">5</span>關於修改</h2>
-  <ul>
-    <li>可免費修改一次，超過則修一次 +NT.100。</li>
-    <li><strong>免費修改僅限「原設定有明顯錯誤」</strong>（如紅髮畫成藍髮），不接受新增需求或更改設定。</li>
-  </ul>
+  <p class="sec-title"><span class="dash">-</span>revise</p>
+  <div class="block">
+    <p>可免費修改一次，超過則修一次 +NT.100。</p>
+    <p class="nowrap"><strong>免費修改僅限「原設定有明顯錯誤」</strong>（如紅髮畫成藍髮），不接受新增需求或更改設定。</p>
+  </div>
   <details>
     <summary>關於顏色與參考圖（重要，請務必展開）</summary>
     <div class="fine">
       <ul>
-        <li>光影、明暗造成的色調差異屬正常上色，<strong>成品色 ≠ 原色碼</strong>，不在修改範圍內。</li>
+        <li>光影、明暗造成的色調差異屬正常上色，<span class="em">成品色 ≠ 原色碼</span>，不在修改範圍內。</li>
         <li>每種模板有不同畫法，恕無法接受指定色票。</li>
         <li>請只提供「正確」的角色圖片，勿同時附上「不要這樣畫」的錯誤範例／反例圖，一律以您提供的圖為準繪製。</li>
         <li>事後才補上正確圖片 or 指定色票，一律不作修改。</li>
@@ -198,22 +188,20 @@
     </div>
   </details>
 
-  <hr>
+  <p class="sec-title"><span class="dash">-</span>credit</p>
+  <div class="block">
+    <p>標註方式：<a class="link" href="https://www.plurk.com/yyo4" target="_blank" rel="noopener">@yyo4</a> / 寝不足，連結可有可無。</p>
+  </div>
 
-  <h2><span class="num">6</span>標註方式</h2>
-  <p>@yyo4 / 寝不足，連結可有可無。</p>
+  <p class="sec-title"><span class="dash">-</span>self-price <span style="color:var(--soft);font-size:9pt;">非開放時段適用</span></p>
+  <div class="block">
+    <p>私噗時請一併提供「人設圖、項目、使用範圍與自定價格」。</p>
+    <p>需依序排單處理，不接受急單；現生忙碌時段可能拒收。</p>
+    <p>自帶價 x2 起、成品不公開 x3。</p>
+    <p class="lead">有以上需求隨時可私噗詢問。詢問 ≠ 一定要委託，但請不要在我回覆後消失。</p>
+  </div>
 
-  <hr>
-
-  <h2><span class="num">7</span>自帶價　<span class="sub" style="font-weight:400;">非開放時段適用</span></h2>
-  <ul>
-    <li>私噗時請一併提供「人設圖、項目、使用範圍與自定價格」。</li>
-    <li>需依序排單處理，不接受急單；現生忙碌時段可能拒收。</li>
-    <li>自帶價 x2 起、成品不公開 x3。</li>
-  </ul>
-  <p class="sub">有以上需求隨時可私噗詢問。詢問 ≠ 一定要委託，但請不要在我回覆後消失。</p>
-
-  <p class="foot">— 感謝您閱讀到這裡，期待與您愉快合作 —</p>
+  <p class="foot">感謝閱讀！<br>© 2026</p>
 
 </body>
 </html>
